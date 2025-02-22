@@ -10,3 +10,6 @@ main = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text='Catalog')],
 catalog = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='T-shirts', callback_data='t-shirts')],
                                                 [InlineKeyboardButton(text='Sneakers',callback_data='sneakers')],
                                                 [InlineKeyboardButton(text='Hats', callback_data='hats')]])
+
+get_number = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text='Send number', request_contact=True)]],
+                                 resize_keyboard=True)
